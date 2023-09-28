@@ -4,11 +4,23 @@ The font size here is set to 62.5% so that
 1em = 10px. This makes adjusting our typography
 a little easier
 */
+#bigTitle{
+
+}
+#smallTitle{
+
+}
+#rightBar{
+
+}
+#leftBar{
+	
+}
 body {
 	margin: 0 auto;
 	width: 800px;
 	padding: 0;
-	background: #7a2122 url('../images/body_bg.gif') repeat-x top;
+	background: #000000 url('../images/back_all.jpg') no-repeat top;
 	font-family: Helvetica, sans-serif;
 	font-size: 62.5%;
 	color: #333;
