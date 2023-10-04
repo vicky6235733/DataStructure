@@ -24,10 +24,11 @@ a little easier
 	font-weight: bold;
 }
 #rightblock{
+	margin-right:-6px;
 	float:right;
-	display: flexbox;
+	display:flexbox;
 	flex: column;
-	width:48%;
+	width:35%;
 }
 #rightBar{
 	position:relative;
@@ -37,40 +38,81 @@ a little easier
 #rightBar h2{
 	background-color:rgb(220, 95, 27) ;
 	color:white;
-	vertical-align: middle;
-	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	border-radius: 8px;
 	margin: 8px;
-	padding: 8px;
-	height:35px;
+	padding: 8px 8px 8px 10px;
+	height:20px;
 }
 #rightBar ul{
-	background:linear-gradient(rgb(220, 95, 27),white);
+	background:linear-gradient(rgba(227, 85, 24, 0.75) 10%,white 90%);
+	border-radius: 10px;
+	width:72%;
+	margin-left:10px;
+	padding-top: 10px;
+	height:100px;
+	
+}
+#rightBar li{
+	margin-left:-24px;
+	list-style-type: none;
+	padding:4px;
+	color:rgb(220, 95, 27);
+	
+}
+#rightBar a{
+	color:rgb(220, 95, 27);
 }
 #leftBar{
+	margin-left:-6px ;
 	float:left;
-	width:48%;
-	height:180px;
+	width:65%;
+	height:600px;
+	
+	
 }
-/*background:linear-gradient(rgb(220, 95, 27),white);*/
+
 #leftBar h2{
 	background-color:rgb(220, 95, 27) ;
 	color:white;
-	vertical-align: middle;
-	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	border-radius: 8px;
 	margin: 8px;
-	padding: 8px;
-	height:35px;
+	padding: 8px 8px 8px 10px;
+	height:20px;
 }
 #leftBar ul{
-	background:linear-gradient(rgb(220, 95, 27),white);
-}
+	background:linear-gradient(rgba(227, 85, 24, 0.75) 10%,white 90%);
+	border-radius: 10px;
+	width:84%;
+	margin-left: 10px;
+	padding-top: 10px;
+	height:500px;
 
+	display: flex;
+	align-items: center;
+	
+}
+#pre{
+	margin-left:-20px;
+	margin-top:36px;
+	text-align: left;
+	font-size: 10pt;
+	color: #333;
+	width:98%;
+	padding-top: 15px;
+}
+#pre a{
+	color:rgb(220, 95, 27);
+}
 article{
 	height: 1080px;
 }
 body {
 	margin: 0 auto;
-	width: 800px;
+	width: 600px;
 	
 	padding: 0;
 	background: #000000 url('../images/back_all.jpg') no-repeat top;
@@ -137,25 +179,7 @@ nav{
 	
 }
 
-#nav li a {
-	color: #fff;
-	text-decoration: none;
-	background: none;
-}
-#nav li a:link {
-	color: #fff;
-	 
-}
- 
-#nav li a:visited {
-	color: #ff0000;
-	 
-}
-/*
-Because the header content is outside the wrap <div>,
-we need to use the same "margin: 0 auto" trick to center
-the layout
-*/
+
 #main {
 	display:flexbox;
 	flex: column;
