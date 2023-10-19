@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="container-fluid row">
 
 <head>
     <meta charset="UTF-8">
@@ -7,59 +7,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/hw2.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
-    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <title>nooooooo</title>
 </head>
 
 <body>
-    <header id="Title">
-        <span id="bigTitle">NewDarkSide</span>
-        <span id="smallTitle">CONPANY SLOGAN GOES HERE</span>
+    <header id="Title" class="container">
+        <span id="bigTitle" class="mx-120 my-240">NewDarkSide</span>
+        <span id="smallTitle" class="mx-120 my-240">阿圖片輪播就不會動阿它排擠我</span>
     </header>
-    <article id="main">
-        <div id="main_title">
-            <img src="images/tokyo.jpg" alt="tokyo">
-        </div>
-        <nav>
-            <ul id="nav">
-                <li>Home</li>
-                <li>Blogs</li>
-                <li>Photos</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-        <div>
-            <ul>
+    <div id="body" class="col-10 mx-auto">
 
-                <li>
-                    <h3>Our Work</h3><img src="images/markinjapan.jpg" alt="">
-                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, magnam!</span>
-                </li>
-                <li>
-                    <h3>Our Work</h3><img src="images/a2g.jpg" alt="">
-                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, magnam!</span>
-                </li>
-                <li>
-                    <h3>Our Work</h3><img src="images/foobar.jpg" alt="">
-                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, magnam!</span>
-                </li>
-            </ul>
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div> 
-        <div>
-            <p>Copyright &copy; Red Lantern Design,all rights reserved.</p><br>
-            <p>lorem|lorem|lorem|lorem</p>
-        </div>
-            
-        </footer>
+        <article id="main">
+            <div id="main_title" class="container">
+
+                <div id="demo" class="carousel slide" data-bs-ride="carousel" ><!--用id來連結-->
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/og_image.jpg" alt="tokyo" class="d-block container-fluid w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/bae.png" alt="aa" class="d-block container-fluid w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/maxresdefault.jpg" alt="bb" class="d-block container-fluid w-100">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
 
 
+                </div>
+            </div>
+            <nav class="py-18 align-middle">
+                <ul id="nav">
+                    <li>Home</li>
+                    <li>Blogs</li>
+                    <li>Photos</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <div>
+                <ul class="row">
 
-        
-    </article>
+                    <li class="row col-4">
+                        <h3>Our options</h3><img class="col-4" src="images/markinjapan.jpg" alt="">
+                        <span class="col-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur,
+                            magnam!</span>
+                    </li>
+                    <li class="row col-4">
+                        <h3>Our Work</h3><img class="col-4" src="images/a2g.jpg" alt="">
+                        <span class="col-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur,
+                            magnam!</span>
+                    </li>
+                    <li class="row col-4">
+                        <h3>My options</h3><img class="col-4" src="images/foobar.jpg" alt="">
+                        <span class="col-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur,
+                            magnam!</span>
+                    </li>
+                </ul>
+            </div>
+            <br><br>
+            <div class="row flex mx-auto container">
+                <div class="row col-8 mx-10 px-10 py-10 fk">
+                    <span>我會但我什麼都不會margin只有auto可以用，肯定是css的優先順序在搞鬼</span>
+                    <div class="row col-6">
+                        <img class="col-6" src="images/markinjapan.jpg" alt="">
+                        <span class="col-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur,
+                            magnam!</span>
+                    </div>
+                    <div class="row col-6">
+                        <img class="col-6" src="images/markinjapan.jpg" alt="">
+                        <span class="col-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur,
+                            magnam!</span>
+                    </div>
+                    <div class="row col-6">
+                        <img class="col-6" src="images/markinjapan.jpg" alt="">
+                        <span class="col-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur,
+                            magnam!</span>
+                    </div>
+                    <div class="row col-6">
+                        <img class="col-6" src="images/markinjapan.jpg" alt="">
+                        <span class="col-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur,
+                            magnam!</span>
+                    </div>
+                </div>
+                <div class="col-4 mx-auto fk">
+                    <span>
+                        沒時間了塊上車
+                        打工好忙我要死了
+                        開幕只休一天我要怎麼做事
+                        嗚嗚嗚嗚嗚嗚嗚
+                        <br><br>
+                        超連結超連結超連結
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error tempore praesentium qui
+                        a quaerat hic voluptas officiis corrupti nesciunt iure.
+                    </span>
+                </div>
+            </div>
+
+            <div class="row mx-auto container">
+                <div class="col-8 mx-auto ff">
+                    <h3>一些標題</h3><br>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita numquam voluptate tempore
+                        inventore. Ad corrupti odit et quae. Harum, dolorem.</span>
+                </div>
+                <div class="col-4 mx-auto ff">
+                    <h3>一些標題</h3><br>
+                    <img class="col-6" src="images/markinjapan.jpg" alt=""><br>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita numquam voluptate tempore
+                        inventore. Ad corrupti odit et quae. Harum, dolorem.</span>
+                </div>
+            </div>
+            <footer>
+
+                Copyright &copy; Red Lantern Design,all rights reserved.<br>
+                lorem|lorem|lorem|lorem
+
+            </footer>
+        </article>
+    </div>
 </body>
 
 </html>
