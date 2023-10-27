@@ -16,11 +16,11 @@
 <script>
     var testing = new Vue({
         el: "#app",
-        data: "hi"
+        data: {message:"hi"}
     })
     var innn= new Vue({
         el: "#app",
-        data: "nooo"
+        data:  {message:"nooo"}
     })
     var listX =new Vue({
         el: "#app",
@@ -43,10 +43,11 @@
 </script>
 
 <body>
-    <div id="app"></div>
-    <button onClick="doFunction()">按按按</button>{{testing}}
+    
+    <button onClick="doFunction()">按按按</button>
     <input v-model="innn">
-    {{innn}}
+    <div id="app">{{testing}}<br>{{innn}}</div>
+    
     <ui>
         <li v-for="x in todos">x</li>
     </ui>
