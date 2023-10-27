@@ -4,7 +4,7 @@ var bodyParser = require("body-parser");
 server = express();
 var fs = require("fs");
 
-server.use(express.static("Main"));//web root
+server.use(express.static("Main"));//web root----------伺服器會指定連結到這個資料夾
 //server.use(express.static("md110"));//web root
 server.use(bodyParser.urlencoded());
 server.use(bodyParser.json());
@@ -42,7 +42,7 @@ server.get("/service", function(req, res){
     res.send(Services);
 })
 
-server.get("/portfolio", function(req, res){
+server.get("/portfolio", function(req, res){//------------接收form資料
     
     PortfolioDB.find({}).then(results => {
         if(results !=null){
