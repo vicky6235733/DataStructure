@@ -1,0 +1,10 @@
+#holePage{
+    width:100%;
+    margin: 2%;
+}
+#holePage>div{
+    margin: 2%;
+    padding: 2%;
+    border-radius: 25px;
+    background-color: blanchedalmond;
+}
