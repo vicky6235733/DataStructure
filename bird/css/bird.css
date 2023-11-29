@@ -1,0 +1,67 @@
+
+/*RWD*/
+/*tag*/
+html{
+width: 1920px;
+height:1080px;
+}
+body{
+    background-image: url(../img/bg_01.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    z-index: 3;
+    
+}
+/*class*/
+/*id*/
+#holePage{
+    width:100%;
+    margin: auto;
+    
+}
+#bgColor{
+    width:100%;
+    margin: auto;
+    background-color: #f05f1c40;
+    z-index: 5;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#holePage>div{
+    background: rgba(255, 255, 255, 0.5);
+	backdrop-filter:blur(6px);
+    border-radius: 6px;
+    box-shadow:0 0 14px 6px rgb(255, 255, 255,.5),inset 0 0 14px 6px rgba(255, 255, 255, .2);
+    /* transform:scale(1); */
+    margin: 2%;
+    padding: 2%;
+    width: 1600px;
+    height: 560px;
+}
+
+#logo{
+width: 12%;
+height:auto;
+}
+#burgerList{
+    width: 100px;
+    margin: 1%;
+}
+#title{
+    text-align: right;
+    font-size: 48pt;
+    color: #724832;
+}
+#titleBlock{
+    width:100%;
+    height: auto;
+    padding-top:20%;
+    padding-right:9cqmax;
+    position: absolute;
+}
+#hidden{
+    visibility: hidden;
+}
