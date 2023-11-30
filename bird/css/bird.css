@@ -1,67 +1,98 @@
-
 /*RWD*/
-/*tag*/
-html{
-width: 1920px;
-height:1080px;
+@media screen and (max-width:1920px) {
+    html {
+        width: 1920px;
+        margin: 0;
+    }
 }
-body{
-    background-image: url(../img/bg_01.png);
+
+@media screen and (max-width:1280px) {
+    html {
+        width: 1280px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:720px) {
+    html {
+        width: 720px;
+        margin: 0;
+    }
+}
+
+
+/*tag*/
+
+body {
+    background-image: url(../img/bg_01_Y.png);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 2;
+    width: 100%;
     
-    z-index: 3;
-    
+
 }
+
 /*class*/
 /*id*/
-#holePage{
-    width:100%;
-    margin: auto;
-    
+
+#holePage {
+   margin: auto;
+    width: 100%;
+    z-index: 10;
 }
-#bgColor{
-    width:100%;
-    margin: auto;
-    background-color: #f05f1c40;
-    z-index: 5;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#holePage>div{
-    background: rgba(255, 255, 255, 0.5);
-	backdrop-filter:blur(6px);
+#visual {
+    background: rgba(255, 255, 255,.5);
+    backdrop-filter: blur(2px);
     border-radius: 6px;
-    box-shadow:0 0 14px 6px rgb(255, 255, 255,.5),inset 0 0 14px 6px rgba(255, 255, 255, .2);
+    box-shadow: 0 0 14px 6px rgba(255, 255, 255, .25), inset 0 0 14px 6px rgba(255, 255, 255, .2);
     /* transform:scale(1); */
     margin: 2%;
     padding: 2%;
-    width: 1600px;
+    width: 90%;
     height: 560px;
 }
 
-#logo{
-width: 12%;
-height:auto;
+#logo {
+    width: 11%;
+    height: auto;
 }
-#burgerList{
+
+#burgerList {
     width: 100px;
     margin: 1%;
 }
-#title{
+
+#title {
     text-align: right;
     font-size: 48pt;
-    color: #724832;
+    color: rgb(47, 62, 19);
+
+
 }
-#titleBlock{
-    width:100%;
-    height: auto;
-    padding-top:20%;
-    padding-right:9cqmax;
+
+#titleBlock {
+    width: 50%;
     position: absolute;
+    margin-left: 35%;
+    margin-top: 20%;
+    z-index: 7;
 }
-#hidden{
+#data{
+
+    height: 560px;
+    width: 100%;
+    background: rgb(47, 62, 19);
+    color: #90B44B;
+    
+}
+#introduction{
+    height: 560px;
+    width: 100%;
+    background: rgb(240,94,28);
+    color: rgb(47, 62, 19);
+}
+#hidden {
     visibility: hidden;
 }
