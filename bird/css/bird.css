@@ -48,10 +48,10 @@ body {
     border-radius: 6px;
     box-shadow: 0 0 14px 6px rgba(255, 255, 255, .25), inset 0 0 14px 6px rgba(255, 255, 255, .2);
     /* transform:scale(1); */
-    margin: 2%;
+    margin: 3.5%;
     padding: 2%;
     width: 90%;
-    height: 560px;
+    height: 600px;
 }
 
 #logo {
@@ -80,15 +80,16 @@ body {
     z-index: 7;
 }
 #data{
-
-    height: 560px;
+    height:720px;
     width: 100%;
     background: rgb(47, 62, 19);
-    color: #90B44B;
+    color: #90B44B; 
     
+   
 }
+
 #introduction{
-    height: 560px;
+    height: 720px;
     width: 100%;
     background: rgb(240,94,28);
     color: rgb(47, 62, 19);
