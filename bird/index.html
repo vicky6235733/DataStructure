@@ -4,74 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/birdVer02.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <link href="./css/bird.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
     <title>HOW BIRD NAII IS!</title>
-    <link rel="icon" href="./img/naii_logo_head.png" type="image/x-icon"/>
+    <link rel="icon" href="./img/naii_logo_head.png" type="image/x-icon" />
 </head>
 
-<body>
-    
-    
-    <div class="container row" id="holePage">
-        <div>
-            <header id="visual">
-                
-                <nav id="burgerList" class="position-absolute end-0 top-0">
-                    <img src="./img/naii_logo.png" alt="logo" id="logo">
-                    <img src="" alt="burger list">
-                    <ul>
-                        <li><a href="#visual"></a></li>
-                        <li><a href="#data"></a></li>
-                        <li><a href="#introduction"></a></li>
-                        <li><a href="#vote"></a></li>
-                    </ul>
+<body class="container-fuild">
 
-                </nav>
 
-            </header>
+    <div id="holePage" class="row">
 
-            <!-- home  01-->
-            <div>
+        <!-- home  01-->
+        <nav id="visual" class="row navbar navbar-expand-lg navbar-light col-12"
+            style="margin:auto;display: flex; align-items:center;padding: 10px;">
+            <div class="navbar-header col-11">
+                <a class="navbar-brand" href="#" style="color:white;margin: 2px;">
+
+                    鳥人研究事務所<br>HOW BIRD NAII IS!
+
+                </a>
 
             </div>
 
-        </div>
+            <ul class="nav navbar-nav col-1" style="text-align: right;">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white">
+                        <img src="./img/naii_logo.png" alt="logo" style="width:100%">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="navBar">
+                        <a class="dropdown-item" href="#visual">鳥人研究事務所</a>
+                        <a class="dropdown-item" href="#data">NAII-65534樣本研究資料</a>
+                        <a class="dropdown-item" href="#introduction">NAII-65534樣本DCC-20531人種檔案</a>
+                        <a class="dropdown-item" href="#vote">NAII-65534-1鳥種屬性延伸調查</a>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+
+
+
+
         <article id="titleBlock">
             <p id="title">
-                NAII的OOXX<br>
+                NAII的OOXX&nbsp;<br>
                 這個人怎麼這麼鳥!
             </p>
         </article>
-    
-        <!-- <div>
-            <div id="bg"></div>
-            <div id="bgColor"></div>
-        </div> -->
+
+
         <!-- portfolio 02-->
-        <div id="data">
-            
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam, vitae doloremque quo consectetur
-            suscipit
-            praesentium itaque atque sequi id?
-            
-            <div><a href=""></a></div>
+        <div id="data" class="col-12 row w-75" style="margin:auto;margin-top: 8%;">
+
+            <div class="col-12 inline-block">
+
+            </div>
+            <div class="col-4 inline-block" style="text-align: center;width:150px;margin: auto;">
+                <img src="./img/portfolio01.png" alt="portfolio01" id="portImg" style="width:180%;margin-left: -40%;">
+            </div>
+            <div class="col-12 inline-block">
+                <div><a href=""></a></div>
+            </div>
+
+
+
+
         </div>
         <!-- article 03-->
-        
-        <div id="introduction">
+
+        <div id="introduction" class="col-12 row w-75" style="margin:auto;margin-top: 8%;padding: 5% 13%;">
             <article>
-                <h3>自我介紹</h3>
+                <h3>人種研究資料</h3>
                 <div>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam, vitae doloremque quo
-                    consectetur
-                    suscipit praesentium itaque atque sequi id?
+                    &ensp;&ensp;&ensp;&ensp;這個人叫做廖芳妤，擁有不擅長敷衍的強迫症，什麼事情都愛參一咖，看起來能豐富自己經驗，<br>
+                    但實際上只是累死自己，因為半工半讀的薪水真的少的可憐。<br>
+                    &ensp;&ensp;&ensp;&ensp;這個人最愛創造突破眼界的事物，也很愛搞怪自嗨，要是他的生活沒有這麼拘謹有計劃，他應該更適合去美術系，<br>
+                    把鳳梨片貼在天花板照亮世界，或是用電腦終端機輸出dead apple。<br>
+                    &nbsp;&nbsp;如果你嘗試接觸這個人，你可以放心做任何事，因為與其自己猜測別人心思，這個人更喜歡單刀直入，是個很正統的台中人<br>
+                    （（蛤你要吃慶記是不是<br>
+                    &ensp;&ensp;&ensp;&ensp;偷偷告訴你，這個人在一般情況只會想到自己，畢竟他快窮死自己了，但如果你覺得受到他的關心，<br>
+                    那麼他肯定是非常刻意在關心你，非常恭喜你，那真是百般榮幸。<br>
+                    <br>
+                    &ensp;&ensp;&ensp;&ensp;この人間は黒野三月と言います。<br>
+                    「あくまで愛鳥家です。」「シンプルなことが好き、面倒なことが嫌い。」
+
                 </div>
             </article>
         </div>
-       <!-- hidden block -->
-        <div id="hidden" >
+        <!-- hidden block -->
+        <div id="hidden">
 
         </div>
         <button></button>
