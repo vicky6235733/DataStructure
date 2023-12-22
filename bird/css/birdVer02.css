@@ -29,7 +29,10 @@
     font-family: "SairaCondensed";
 
 }
-
+*{
+    padding: 0;
+    margin: 0;
+}
 /*tag*/
 body {
     background-image: url(../img/bg_ex.png);
@@ -72,18 +75,19 @@ body {
 }
 
 #data {
-    background-color: rgba(50, 71, 11, 0.581);
+    background-color: rgba(50, 71, 11,0.75);
     box-shadow: 0 0 2px 2px #b7460951, inset 0 0 3px 3px rgba(165, 60, 11, 0.2);
-    border-radius: 50%;
-    height: 540px;
-    backdrop-filter: blur(3px);
+    width: 90%;
+    height: 680px;
+    backdrop-filter: blur(8px);
 }
 #introduction{
-    background-color: rgba(50, 71, 11, 0.581);
+     background-color: rgba(139, 70, 6, 0.75);
     box-shadow: 0 0 2px 2px #b7460951, inset 0 0 3px 3px rgba(165, 60, 11, 0.2);
     border-radius: 50%;
+    border:2% #b7460951;
     height: 540px;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(8px);
     color: white;
 }
 
