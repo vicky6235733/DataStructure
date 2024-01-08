@@ -10,16 +10,14 @@ server.use(bodyParser.urlencoded());
 server.use(bodyParser.json());
 
 var DB = require("nedb-promises");
-var ContactDB = DB.create("contact.db");
 var PortfolioDB = DB.create("portfolio.db");
-// PortfolioDB.insert([
-//     { href: "#portfolioModal1", imgSrc: "img/portfolio/roundicons.png", title: "Round Icons", text: "Graphic Design" },
-//     { href: "#portfolioModal2", imgSrc: "img/portfolio/startup-framework.png", title: "Startup Framework", text: "Website Design" },
-//     { href: "#portfolioModal3", imgSrc: "img/portfolio/treehouse.png", title: "Treehouse", text: "Website Design" },
-//     { href: "#portfolioModal1", imgSrc: "img/portfolio/roundicons.png", title: "Round Icons", text: "Graphic Design" },
-//     { href: "#portfolioModal2", imgSrc: "img/portfolio/startup-framework.png", title: "Startup Framework", text: "Website Design" },
-//     { href: "#portfolioModal3", imgSrc: "img/portfolio/treehouse.png", title: "Treehouse", text: "Website Design" }
-// ])
+ PortfolioDB.insert([
+                    { src: "./img/yum02.jpg", name: "灰冠麻鷺", nick: "「這是什麼鳥」「搖擺地瓜」", content: "身高：47公分。被台灣變成留鳥的候鳥，總是一動不動，好像自己真的沒被看到一樣。", score: 62 },
+                    { src: "./img/sg02.jpg", name: "綠繡眼", nick: "「綠色麻雀」「阿呆白眼圈」", content: "身高：11公分。在樹上會憑空亂飄的一群激動小子，常笨到踩空掉地上，然後大聲求救。", score: 66 },
+                    { src: "./img/coo02.jpg", name: "珠頸鳩", nick: "「欸有鴿子欸」「隨便鳩」", content: "身高：34公分。因為體型和走路姿勢相像，總是被誤會成鴿子，築巢只要花盆和3根樹枝就搞定了。", score: 58 },
+                    { src: "./img/pekaboo02.jpg", name: "玄鳳鸚鵡", nick: "「炫風鸚鵡」「間諜香蕉」", content: "身高：30公分。受人類把玩幾世紀的鸚鵡，頭上一撮毛直接推翻達爾文進化論。", score: 64 },
+                    { src: "./img/bu02.jpg", name: "笑翠鳥", nick: "「音效製造機」「哈哈哈哈哈哈哈」", content: "身高：47公分。翠鳥界的超巨，會發出的叫聲多到被抓去當影視音效的免費勞工。", score: 55 }
+                ])
  
  
 //var sharp=
@@ -27,10 +25,6 @@ server.set("view engine", "ejs");
 server.set("views", __dirname+"/views");
 
 
-server.get("/contact", function(req, res){
-    //res.send("");
-    res.redirect("https:/md.nutc.edu.tw");
-}); 
 
 server.get("/service", function(req, res){
 

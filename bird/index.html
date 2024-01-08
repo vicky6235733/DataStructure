@@ -7,12 +7,18 @@
     <link href="./css/birdVer02.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!--bootstraps-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script><!--bootstraps-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script><!--bootstraps-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script> <!-- gsap-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script> <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> <!-- vue -->
+
     <title>HOW BIRD NAII IS!</title>
     <link rel="icon" href="./img/naii_logo_head.png" type="image/x-icon" />
 </head>
@@ -25,22 +31,27 @@
             <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-light row"
                 style="background-color: #5e240547;
                  box-shadow: 0 0 2px 2px #b7460951, inset 0 0 3px 3px rgba(165, 60, 11, 0.2);color: white;backdrop-filter: blur(3px);">
-                
+
                 <div class=" col-2">
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                            <li class="nav-item dropdown" >
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false"  style="color:white;">
+                                    data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
                                     <!-- <img src="./img/naii_logo.png" alt="logo" style="width:32%;"> -->
                                     鳥人研究事務所<br>HOW BIRD NAII IS!
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="margin-top: 4%;margin-left:-5%;background-color:#d4561156; ">
-                                    <li><a class="dropdown-item" href="#visual" style="color:rgb(23, 24, 22);">鳥人研究事務所</a></li>
-                                    <li><a class="dropdown-item" href="#data" style="color:rgb(23, 24, 22);">NAII-65534樣本研究資料</a></li>
-                                    <li><a class="dropdown-item" href="#introduction" style="color:rgb(23, 24, 22);">NAII-65534樣本DCC-20531人種檔案</a></li>
-                                    <li><a class="dropdown-item" href="#vote" style="color:rgb(23, 24, 22);">NAII-65534-1鳥種屬性延伸調查</a></li>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                    style="margin-top: 4%;margin-left:-5%;background-color:#d4561156; ">
+                                    <li><a class="dropdown-item" href="#visual"
+                                            style="color:rgb(23, 24, 22);">鳥人研究事務所</a></li>
+                                    <li><a class="dropdown-item" href="#data"
+                                            style="color:rgb(23, 24, 22);">NAII-65534樣本研究資料</a></li>
+                                    <li><a class="dropdown-item" href="#introduction"
+                                            style="color:rgb(23, 24, 22);">NAII-65534樣本DCC-20531人種檔案</a></li>
+                                    <li><a class="dropdown-item" href="#vote"
+                                            style="color:rgb(23, 24, 22);">NAII-65534-1鳥種屬性延伸調查</a></li>
                                 </ul>
                             </li>
 
@@ -63,13 +74,13 @@
 
 
         <!-- portfolio 02-->
-        <div id="data" class="col-12 row w-75" style="margin:auto;margin-top: 8%;">
+        <div id="data" class="col-12 row w-100" style="margin:auto;margin-top: 8%;">
 
             <div class="col-12 inline-block">
 
             </div>
             <div class="col-4 inline-block" style="text-align: center;width:150px;margin: auto;">
-                <img src="./img/portfolio01.png" alt="portfolio01" id="portImg" style="width:180%;margin-left: -40%;">
+                <img src="./img/portfolio01.png" alt="portfolio01" id="portImg" style="margin-left: -40%;">
             </div>
             <div class="col-12 inline-block">
                 <div><a href=""></a></div>
@@ -87,7 +98,7 @@
                 <div>
                     &ensp;&ensp;&ensp;&ensp;這個人叫做廖芳妤，擁有不擅長敷衍的強迫症，什麼事情都愛參一咖，看起來能豐富自己經驗，<br>
                     但實際上只是累死自己，因為半工半讀的薪水真的少的可憐。<br>
-                    &ensp;&ensp;&ensp;&ensp;這個人最愛創造突破眼界的事物，也很愛搞怪自嗨，要是他的生活沒有這麼拘謹有計劃，他應該更適合去美術系，<br>
+                    &ensp;&ensp;&ensp;&ensp;這個人最愛創造突破眼界的事物，也很愛搞怪自嗨，要是他的生活沒有這麼拘謹有計劃，他應該更適合去美術系，
                     把鳳梨片貼在天花板照亮世界，或是用電腦終端機輸出dead apple。<br>
                     &nbsp;&nbsp;如果你嘗試接觸這個人，你可以放心做任何事，因為與其自己猜測別人心思，這個人更喜歡單刀直入，是個很正統的台中人<br>
                     （（蛤你要吃慶記是不是<br>
@@ -100,17 +111,40 @@
                     </div>
                 </div>
             </article>
+            
         </div>
+        <img src="./img/tri.png" alt="tri" style="width: 5%;position: absolute;" id="tri">
         <!-- hidden block -->
         <div id="hidden">
 
         </div>
-        <button></button>
+        <!-- <button></button> -->
         <!-- vote 04-->
-        <div id="vote" class="col-12 row">
-            <div class="col-4"></div><!-- :for -->
 
+        <div id="vote" class="col-12 w-100 container-fluid" style="margin:auto;margin-top: 8%;padding: 3% 13%;">
+            <div class="row scrolll" id="card" style="display:inline-flex ;width: auto;color:white;">
+                <div class="card col-3 panel" style="padding:1%; display:inline-flex ;margin: 0 2% ;position:inherit;background-color: #d8530c78;" v-for="item in todos">
+                    <img :src="item.src" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{item.name}}</h5>
+                        <p class="card-text">{{item.nick}}</p>
+                        <p>{{item.content}}</p>
+                        
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        
+                            <button onclick="up()" class="btn btn-outline-warning" style="margin: 4%">投他一票!</button>
+                       
+                        <li class="list-group-item" style="background-color: #d8530c00;color:white;text-align: center;">當前票數</li>
+                    </ul>
+                </div>
+            </div><!-- :for -->
         </div>
+        
+
+
+    </div>
+  
 
 
 
@@ -118,12 +152,64 @@
 
 
 
-        <!-- script -->
+   
 
 
     </div>
 
+    <script>
+        var birdCard = new Vue({
+            el: "#card",
+            data: {
+                todos: [
+                    { src: "./img/yum02.jpg", name: "灰冠麻鷺", nick: "「這是什麼鳥」「搖擺地瓜」", content: "身高：47公分。被台灣變成留鳥的候鳥，總是一動不動，好像自己真的沒被看到一樣。", score: 62 },
+                    { src: "./img/sg02.jpg", name: "綠繡眼", nick: "「綠色麻雀」「阿呆白眼圈」", content: "身高：11公分。在樹上會憑空亂飄的一群激動小子，常笨到踩空掉地上，然後大聲求救。", score: 66 },
+                    { src: "./img/coo02.jpg", name: "珠頸鳩", nick: "「欸有鴿子欸」「隨便鳩」", content: "身高：34公分。因為體型和走路姿勢相像，總是被誤會成鴿子，築巢只要花盆和3根樹枝就搞定了。", score: 58 },
+                    { src: "./img/pekaboo02.jpg", name: "玄鳳鸚鵡", nick: "「炫風鸚鵡」「間諜香蕉」", content: "身高：30公分。受人類把玩幾世紀的鸚鵡，頭上一撮毛直接推翻達爾文進化論。", score: 64 },
+                    { src: "./img/bu02.jpg", name: "笑翠鳥", nick: "「音效製造機」「哈哈哈哈哈哈哈」", content: "身高：47公分。翠鳥界的超巨，會發出的叫聲多到被抓去當影視音效的免費勞工。", score: 55 }
+                ]
+            }
 
+        });
+        function up() {
+
+        }
+
+        $.ajax({
+            url: "bird",
+            method: "get",
+            dataType: "json",
+            success: function (data) {
+                birdCard.todos = data;
+            }
+
+        });
+
+
+     
+
+        gsap.to("#intro",{
+            scrollTrigger: {
+                trigger: "#intro",
+                start:"top 100px",
+                end:"button 100px",
+                toggleAction:"restart restart reset reset",
+                scrub: 1,
+                markers:true
+                
+            },
+            scale:1.4,
+            y:100,
+            duration:5,
+            transformOrigin:"50% 50%"
+
+
+
+        });
+
+
+
+    </script>
 </body>
 
 </html>
