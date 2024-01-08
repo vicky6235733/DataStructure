@@ -15,7 +15,7 @@
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script><!--bootstraps-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script> <!-- gsap-->
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script> <!-- gsap -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> <!-- vue -->
 
@@ -111,7 +111,7 @@
                     </div>
                 </div>
             </article>
-            
+
         </div>
         <img src="./img/tri.png" alt="tri" style="width: 5%;position: absolute;" id="tri">
         <!-- hidden block -->
@@ -123,28 +123,30 @@
 
         <div id="vote" class="col-12 w-100 container-fluid" style="margin:auto;margin-top: 8%;padding: 3% 13%;">
             <div class="row scrolll" id="card" style="display:inline-flex ;width: auto;color:white;">
-                <div class="card col-3 panel" style="padding:1%; display:inline-flex ;margin: 0 2% ;position:inherit;background-color: #d8530c78;" v-for="item in todos">
+                <div class="card col-3 panel"
+                    style="padding:1%; display:inline-flex ;margin: 0 2% ;position:inherit;background-color: #d8530c78;"
+                    v-for="item in todos">
                     <img :src="item.src" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">{{item.name}}</h5>
                         <p class="card-text">{{item.nick}}</p>
                         <p>{{item.content}}</p>
-                        
+
                     </div>
                     <ul class="list-group list-group-flush">
-                        
-                            <button onclick="up()" class="btn btn-outline-warning" style="margin: 4%">投他一票!</button>
-                       
-                        <li class="list-group-item" style="background-color: #d8530c00;color:white;text-align: center;">當前票數</li>
+
+                        <button onclick="up()" class="btn btn-outline-warning" style="margin: 4%">投他一票!</button>
+
+                        <li class="list-group-item" style="background-color: #d8530c00;color:white;text-align: center;">
+                            當前票數</li>
                     </ul>
                 </div>
             </div><!-- :for -->
         </div>
-        
+
 
 
     </div>
-  
 
 
 
@@ -152,10 +154,11 @@
 
 
 
-   
 
 
-    </div>
+
+
+    
 
     <script>
         var birdCard = new Vue({
@@ -186,22 +189,22 @@
         });
 
 
-     
 
-        gsap.to("#intro",{
+
+        gsap.to("#intro", {
             scrollTrigger: {
                 trigger: "#intro",
-                start:"top 100px",
-                end:"button 100px",
-                toggleAction:"restart restart reset reset",
+                start: "top 100px",
+                end: "bottom 100px",
+                toggleActions: "restart restart reset reset",
                 scrub: 1,
-                markers:true
-                
+                markers: true
+
             },
-            scale:1.4,
-            y:100,
-            duration:5,
-            transformOrigin:"50% 50%"
+            scale: 1.4,
+            y: 100,
+            duration: 5,
+            transformOrigin: "50% 50%"
 
 
 
