@@ -74,23 +74,43 @@
 
 
         <!-- portfolio 02-->
-        <div id="data" class="col-12 row w-100" style="margin:auto;margin-top: 8%;">
+        <div id="data" class="col-12 row container-fluid w-100" style="margin:auto;margin-top: 8%;">
 
-            <div class="col-12 inline-block">
+            <div class="row inline-block col-12" id="Bblock">
+                <div class="col-6"></div>
+                <div class="col-6" id="Pblock">
+                    <b>基本資訊</b><br>
+                    0979900175<br>
+                    vicky6235733@yahoo.com.tw<br>
+                    <b>技能</b><br>
+                    寫作企劃、程式設計、日文、平面排版、3D建模
+
+                </div>
+            </div>
+            <div class="row inline-block col-5" id="Bblock">
+                <div class="col-12" id="Pblock" style="padding: 12% 0 0 22%;">
+
+                    <b>興趣</b><br>
+                    觀鳥、追番、繪圖、玩遊戲、寫小說<br>
+                    影像後製、創意發想（做白日夢）
+                </div>
 
             </div>
-            <div class="col-4 inline-block" style="text-align: center;width:150px;margin: auto;">
-                <img src="./img/portfolio01.png" alt="portfolio01" id="portImg" style="margin-left: -40%;">
+            <div class="col-7 inline-block" style="text-align: center;width:180px;margin: -3% auto auto -3%;" id="link">
+                <a href="https://youtu.be/dQw4w9WgXcQ"><img src="./img/portfolio01.png" alt="portfolio01" id="portImg"
+                        style="margin-left: -40%;"></a>
             </div>
-            <div class="col-12 inline-block">
+
+            <!-- <div class="col-12 inline-block">
                 <div><a href=""></a></div>
-            </div>
+            </div> -->
 
 
 
 
         </div>
         <!-- article 03-->
+        <img src="./img/tri.png" alt="tri" style="width: 5%;position: absolute;" id="tri">
 
         <div id="introduction" class="col-12 row w-75" style="margin:auto;margin-top: 8%;padding: 5% 13%;">
             <article>
@@ -113,19 +133,62 @@
             </article>
 
         </div>
-        <img src="./img/tri.png" alt="tri" style="width: 5%;position: absolute;" id="tri">
-        <!-- hidden block -->
-        <div id="hidden">
+        <img src="./img/tri.png" alt="tri" style="width: 5%;position: absolute;align-items: end;" id="tri02">
+
+        <!-- plus block -->
+        <div id="plus02" class="whitespace-nowrap m-[50px]">
+            <br>
+        </div>
+        <div id="plus" class="whitespace-nowrap m-[50px]">
+            愛死創作、
+            過勞死受害者、
+            應該、
+            完蛋了我的人生、
+            被子給我好嗎？
+            我是白痴吧、
+            看起來很完美、
+            腦子要炸了、
+            我愛你、
+            這樣有錢嗎？
+            一團混亂、
+            愛死創作、
+            過勞死受害者、
+            人格抽象、
+            理性、
+            無限焦慮症候群、
+            一大袋玉米、
+            香菜不是食物、
+            我支持夏油、
+            直男腦子、
+            操心過度、
+            直來直去、
+            短話長說、
+            自尊消磨殆盡、
+            鳥控、
+            逼自己沉默、
+            行為大於言語、
+            毀滅世界、
+            應該、
+            完蛋了我的人生、
+            被子給我好嗎？
+            我是白痴吧、
+            看起來很完美、
+            腦子要炸了、
+            我愛你、
+            這樣有錢嗎？
+            一團混亂、
+            愛死創作、
+            過勞死受害者、
 
         </div>
         <!-- <button></button> -->
         <!-- vote 04-->
 
-        <div id="vote" class="col-12 w-100 container-fluid" style="margin:auto;margin-top: 8%;padding: 3% 13%;">
-            <div class="row scrolll" id="card" style="display:inline-flex ;width: auto;color:white;">
+        <div id="vote" class="col-12 w-100 container-fluid" style="margin:auto;margin-top: 8%;padding: 3%;">
+            <div class="row scrolll" id="card" style="width: 250%;color:white;">
                 <div class="card col-3 panel"
-                    style="padding:1%; display:inline-flex ;margin: 0 2% ;position:inherit;background-color: #d8530c78;"
-                    v-for="item in todos">
+                    style="padding:.5%; margin: 0 1% ;position:initial;background-color: #d8530c78;width:9%;height:6%;"
+                    v-for="item in todos" id="vc">
                     <img :src="item.src" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">{{item.name}}</h5>
@@ -142,7 +205,52 @@
                     </ul>
                 </div>
             </div><!-- :for -->
+
+            <br><br>
+            <div id="final">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/birdMeme (1).png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/birdMeme (2).png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/birdMeme (3).png" class="d-block w-100" alt="...">
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/birdMeme (4).png" class="d-block w-100" alt="...">
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/birdMeme (5).png" class="d-block w-100" alt="...">
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/birdMeme (6).png" class="d-block w-100" alt="...">
+
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+
+
         </div>
+
+    </div>
 
 
 
@@ -158,28 +266,25 @@
 
 
 
-    
+
 
     <script>
         var birdCard = new Vue({
             el: "#card",
-            data: {
-                todos: [
-                    { src: "./img/yum02.jpg", name: "灰冠麻鷺", nick: "「這是什麼鳥」「搖擺地瓜」", content: "身高：47公分。被台灣變成留鳥的候鳥，總是一動不動，好像自己真的沒被看到一樣。", score: 62 },
-                    { src: "./img/sg02.jpg", name: "綠繡眼", nick: "「綠色麻雀」「阿呆白眼圈」", content: "身高：11公分。在樹上會憑空亂飄的一群激動小子，常笨到踩空掉地上，然後大聲求救。", score: 66 },
-                    { src: "./img/coo02.jpg", name: "珠頸鳩", nick: "「欸有鴿子欸」「隨便鳩」", content: "身高：34公分。因為體型和走路姿勢相像，總是被誤會成鴿子，築巢只要花盆和3根樹枝就搞定了。", score: 58 },
-                    { src: "./img/pekaboo02.jpg", name: "玄鳳鸚鵡", nick: "「炫風鸚鵡」「間諜香蕉」", content: "身高：30公分。受人類把玩幾世紀的鸚鵡，頭上一撮毛直接推翻達爾文進化論。", score: 64 },
-                    { src: "./img/bu02.jpg", name: "笑翠鳥", nick: "「音效製造機」「哈哈哈哈哈哈哈」", content: "身高：47公分。翠鳥界的超巨，會發出的叫聲多到被抓去當影視音效的免費勞工。", score: 55 }
-                ]
-            }
+            // data: {
+            //     todos: [
+            //         { src: "./img/yum02.jpg", name: "灰冠麻鷺", nick: "「這是什麼鳥」「搖擺地瓜」", content: "身高：47公分。被台灣變成留鳥的候鳥，總是一動不動，好像自己真的沒被看到一樣。", score: 62 },
+            //         { src: "./img/sg02.jpg", name: "綠繡眼", nick: "「綠色麻雀」「阿呆白眼圈」", content: "身高：11公分。在樹上會憑空亂飄的一群激動小子，常笨到踩空掉地上，然後大聲求救。", score: 66 },
+            //         { src: "./img/coo02.jpg", name: "珠頸鳩", nick: "「欸有鴿子欸」「隨便鳩」", content: "身高：34公分。因為體型和走路姿勢相像，總是被誤會成鴿子，築巢只要花盆和3根樹枝就搞定了。", score: 58 },
+            //         { src: "./img/pekaboo02.jpg", name: "玄鳳鸚鵡", nick: "「炫風鸚鵡」「間諜香蕉」", content: "身高：30公分。受人類把玩幾世紀的鸚鵡，頭上一撮毛直接推翻達爾文進化論。", score: 64 },
+            //         { src: "./img/bu02.jpg", name: "笑翠鳥", nick: "「音效製造機」「哈哈哈哈哈」", content: "身高：47公分。翠鳥界的超巨，會發出的叫聲多到被抓去當影視音效的免費勞工。", score: 55 }
+            //     ]
+            // }
+            data:{todos:[]}
 
         });
-        function up() {
-
-        }
-
         $.ajax({
-            url: "bird",
+            url: "/portfolio",
             method: "get",
             dataType: "json",
             success: function (data) {
@@ -188,30 +293,113 @@
 
         });
 
+    </script>
 
+    <script>
+        function up() {
+            
+        }
+    </script>
+  
+        
 
-
-        gsap.to("#intro", {
+    <script>
+        gsap.to("#introduction", {
             scrollTrigger: {
-                trigger: "#intro",
-                start: "top 100px",
-                end: "bottom 100px",
+                trigger: "#data",
+                start: "bottom 10px",
+                end: "bottom 0px",
                 toggleActions: "restart restart reset reset",
                 scrub: 1,
-                markers: true
+
 
             },
-            scale: 1.4,
-            y: 100,
+            scale: 1.1,
+            ease: Power2.easeInOut,
+
+
             duration: 5,
             transformOrigin: "50% 50%"
 
 
 
         });
+    </script>
+    <script>
+
+        gsap.to("#tri", {
+            scrollTrigger: {
+                trigger: "#data",
+                start: "bottom 100px",
+                end: "bottom 150px",
+                toggleActions: "restart restart reset reset",
+
+                scrub: 20
+
+            },
+            scale: 1.15,
+            rotation: 360,
+            repeat: 3,
+            yoyo: true,
+            y: -480,
+            ease: Power2.easeInOut,
+
+            transformOrigin: "50% 50%"
+        })
+        gsap.to("#tri", {
+            scrollTrigger: {
+                trigger: "#data",
+                start: "bottom 20px",
+                end: "bottom 50px",
+                toggleActions: "restart restart reset reset",
+
+                scrub: 20
+
+            },
+            scale: 1,
+            rotation: -360,
+            repeat: 3,
+            yoyo: true,
+            y: 480,
+            ease: Power2.easeInOut,
+
+            transformOrigin: "50% 50%"
+        })
+
+
+    </script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+
+        let sections = gsap.utils.toArray("#vc");
+
+        gsap.to(sections, {
+            xPercent: -40 * (sections.length - 1),
+            ease: "none",
+            scrollTrigger: {
+                trigger: "#vote",
+                start: "top 50",
+                pin: true,
+                scrub: 1,
+                snap: 1 / (sections.length - 1),
+                end: "bottom 0",
+
+            },
+
+        });
 
 
 
+    </script>
+    <script>
+
+        gsap.to('#plus', {
+            x: -1 * document.querySelector("#plus").offsetWidth + 2200,
+            duration: 40,
+            repeat: -1,
+            ease: "none",
+        })
     </script>
 </body>
 

@@ -39,7 +39,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-
+    overflow-x:hidden;
 
 
 }
@@ -75,10 +75,45 @@ body {
 }
 
 #data {
+    font-family: "SweiSugarJP", "SairaCondensed";
     background-color: rgb(50, 71, 11);
     box-shadow: 0 0 2px 2px #b7460951, inset 0 0 3px 3px rgba(165, 60, 11, 0.2);
     height: 680px;
     
+   
+    
+}
+#Bblock{
+   height:35%;
+    margin: 2% 0;
+    
+    
+}
+#Pblock{
+    background-color: white;
+    box-shadow: 0 0 2px 2px #b7460951, inset 0 0 4px 4px rgba(165, 60, 11, 0.3);
+    border-radius: 50%;
+    border:2% #b7460951;
+    
+    padding:3% 2% 1% 12%;
+    color: rgb(139, 70, 6);
+    font-size: 14pt;
+    transform:scale(1,1);
+    transition: all 0.5s ease-in-out;
+    
+}
+#Pblock:hover{
+    transform:scale(1.1,1.1);
+}
+#Pblock b{
+    font-size: 16pt;
+}
+#link{
+    transform:scale(1,1);
+    transition: all 0.5s ease-in-out;
+}
+#link:hover{
+    transform:scale(1.25,1.25);
 }
 #introduction{
      background-color: rgba(139, 70, 6, 0.75);
@@ -93,9 +128,43 @@ body {
     
     background-color:  rgb(50, 71, 11);
     box-shadow: 0 0 2px 2px #b7460951, inset 0 0 3px 3px rgba(165, 60, 11, 0.2);
-    height: 680px;
+    height: 1200px;
+    position:static;
+    
     
 }
+#plus{
+    margin-top: 5%;
+    color:white;
+    font-size: 18pt;
+    width: 6400px;
+    font-weight: bolder;    
+    position: absolute;
+    margin: 5% 0;
+}
+#plus02{
+    margin-top: 5%;
+    color:white;
+    font-size: 18pt;
+    width: 100%;
+    font-weight: bolder;    
+    position: absolute;
+    margin: 5% 0;
+   
+    z-index:5;
+    border-width: 0px 400px 0px 400px;
+    border-color:rgb(139, 70, 6);
+    border-style: solid;
+}
+#final{
+    
+    top:10%;
+    height:38%;
+    background-color: rgba(139, 70, 6,0.8);;
+    border-radius: 4px;
+    
+}
+
 
 
 
