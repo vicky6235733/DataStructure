@@ -128,7 +128,7 @@ body {
     font-family: "SweiSugarJP", "SairaCondensed";
     background-color:  rgb(50, 71, 11);
     box-shadow: 0 0 2px 2px #b7460951, inset 0 0 3px 3px rgba(165, 60, 11, 0.2);
-    height: 1200px;
+    height: 1500px;
     position:static;
     
     
@@ -159,7 +159,7 @@ body {
 #final{
     
     top:10%;
-    height:38%;
+    height:30%;
     background-color: rgba(139, 70, 6,0.8);;
     border-radius: 4px;
     
